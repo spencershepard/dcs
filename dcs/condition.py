@@ -58,7 +58,7 @@ class AllOfCoalitionInZone(Condition):
         self.params.append(self.zone)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["coalitionlist"], d["zone"])
 
     def dict(self):
@@ -79,7 +79,7 @@ class AllOfCoalitionOutsideZone(Condition):
         self.params.append(self.zone)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["coalitionlist"], d["zone"])
 
     def dict(self):
@@ -100,7 +100,7 @@ class AllOfGroupInZone(Condition):
         self.params.append(self.zone)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["group"], d["zone"])
 
     def dict(self):
@@ -121,7 +121,7 @@ class AllOfGroupOutsideZone(Condition):
         self.params.append(self.zone)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["group"], d["zone"])
 
     def dict(self):
@@ -144,7 +144,7 @@ class ArgumentInRange(Condition):
         self.params.append(self._max)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["argument"], d["_min"], d["_max"])
 
     def dict(self):
@@ -168,7 +168,7 @@ class BombInZone(Condition):
         self.params.append(self.zone)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["typebomb"], d["numbombs"], d["zone"])
 
     def dict(self):
@@ -190,7 +190,7 @@ class CargoUnhookedInZone(Condition):
         self.params.append(self.zone)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["cargo"], d["zone"])
 
     def dict(self):
@@ -211,7 +211,7 @@ class CoalitionHasAirdrome(Condition):
         self.params.append(self.airdromelist)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["coalitionlist"], d["airdromelist"])
 
     def dict(self):
@@ -232,7 +232,7 @@ class CoalitionHasHelipad(Condition):
         self.params.append(self.helipadlist)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["coalitionlist"], d["helipadlist"])
 
     def dict(self):
@@ -251,7 +251,7 @@ class CockpitHighlightVisible(Condition):
         self.params.append(self.highlight_id)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["highlight_id"])
 
     def dict(self):
@@ -271,7 +271,7 @@ class CockpitParamEqual(Condition):
         self.params.append(self.value_text)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["cockpit_param"], d["value_text"])
 
     def dict(self):
@@ -292,7 +292,7 @@ class CockpitParamEqualToAnother(Condition):
         self.params.append(self.cockpit_param2)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["cockpit_param"], d["cockpit_param2"])
 
     def dict(self):
@@ -315,7 +315,7 @@ class CockpitParamInRange(Condition):
         self.params.append(self._max2)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["cockpit_param"], d["_min2"], d["_max2"])
 
     def dict(self):
@@ -337,7 +337,7 @@ class FlagEquals(Condition):
         self.params.append(self.value)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["flag"], d["value"])
 
     def dict(self):
@@ -358,7 +358,7 @@ class FlagEqualsFlag(Condition):
         self.params.append(self.flag2)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["flag"], d["flag2"])
 
     def dict(self):
@@ -377,7 +377,7 @@ class FlagIsFalse(Condition):
         self.params.append(self.flag)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["flag"])
 
     def dict(self):
@@ -397,7 +397,7 @@ class FlagIsLess(Condition):
         self.params.append(self.value)
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         return cls(d["flag"], d["value"])
 
     def dict(self):
