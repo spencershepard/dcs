@@ -37,7 +37,7 @@ class Condition:
         return "return(true)"
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d, mission):
         raise NotImplementedError
 
     def dict(self):
