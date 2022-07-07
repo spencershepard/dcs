@@ -274,7 +274,7 @@ class Weapons:
     DIS_PL_5EII = {"clsid": "DIS_PL-5EII", "name": "PL-5EII", "weight": 153}
     DIS_PL_8A = {"clsid": "DIS_PL-8A", "name": "PL-8A", "weight": 115}
     DIS_PL_8B = {"clsid": "DIS_PL-8B", "name": "PL-8B", "weight": 115}
-    DIS_RKT_90_UG = {"clsid": "DIS_RKT_90_UG", "name": "UG_90MM", "weight": 382.5}
+    DIS_RKT_90_UG = {"clsid": "DIS_RKT_90_UG", "name": "UG_90MM", "weight": 462.5}
     DIS_SD_10 = {"clsid": "DIS_SD-10", "name": "SD-10", "weight": 289}
     DIS_SD_10_DUAL_L = {"clsid": "DIS_SD-10_DUAL_L", "name": "SD-10 x 2", "weight": 558}
     DIS_SD_10_DUAL_R = {"clsid": "DIS_SD-10_DUAL_R", "name": "SD-10 x 2", "weight": 558}
@@ -295,6 +295,7 @@ class Weapons:
     DIS_WMD7 = {"clsid": "DIS_WMD7", "name": "WMD7 POD", "weight": 295}
     DIS_YJ12 = {"clsid": "DIS_YJ12", "name": "YJ-12", "weight": 1750}
     DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ-83K", "weight": 715}
+    DIS_YU_6 = {"clsid": "DIS_YU_6", "name": "YU-6", "weight": 1558}
     Dipole_Antanna__aesthetic_ = {"clsid": "{SA342_Dipole}", "name": "Dipole Antanna (aesthetic)", "weight": 5}
     DWS39_MJ1 = {"clsid": "{DWS39_MJ1}", "name": "DWS39 MJ1", "weight": 605}
     DWS39_MJ1_MJ2 = {"clsid": "{DWS39_MJ1_MJ2}", "name": "DWS39 MJ1-MJ2", "weight": 605}
@@ -358,6 +359,7 @@ class Weapons:
     F_4_Fuel_tank_W = {"clsid": "{7B4B122D-C12C-4DB4-834E-4D8BB4D863A8}", "name": "F-4 Fuel tank-W", "weight": 1420}
     F_5_150Gal_Fuel_tank = {"clsid": "{PTB-150GAL}", "name": "F-5 150Gal Fuel tank", "weight": 509}
     F_5_275Gal_Fuel_tank = {"clsid": "{0395076D-2F77-4420-9D33-087A4398130B}", "name": "F-5 275Gal Fuel tank", "weight": 909}
+    G7A_T1 = {"clsid": "{G7A_T1}", "name": "G7A_T1", "weight": 1528}
     GAU_12_Gunpod_w_AP_M79 = {"clsid": "{GAU_12_Equalizer_AP}", "name": "GAU 12 Gunpod w/AP M79", "weight": 283.9}
     GAU_12_Gunpod_w_HE_M792 = {"clsid": "{GAU_12_Equalizer_HE}", "name": "GAU 12 Gunpod w/HE M792", "weight": 283.9}
     GAU_12_Gunpod_w_SAPHEI_T = {"clsid": "{GAU_12_Equalizer}", "name": "GAU 12 Gunpod w/SAPHEI-T", "weight": 283.9}
@@ -574,13 +576,12 @@ class Weapons:
     LAU_88_with_3_x_AGM_65D___Maverick_D__IIR_ASM_ = {"clsid": "{DAC53A2F-79CA-42FF-A77A-F5649B601308}", "name": "LAU-88 with 3 x AGM-65D - Maverick D (IIR ASM)", "weight": 865}
     LAU_88_with_3_x_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = {"clsid": "{71AAB9B8-81C1-4925-BE50-1EF8E9899271}", "name": "LAU-88 with 3 x AGM-65E - Maverick E (Laser ASM - Lg Whd)", "weight": 1069}
     LAU_88_with_3_x_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{907D835F-E650-4154-BAFD-C656882555C0}", "name": "LAU-88 with 3 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 1102}
-    LAU_SNEB68G___8xSNEB68_EAP = {"clsid": "{LAU_SNEB68G}", "name": "LAU_SNEB68G - 8xSNEB68_EAP", "weight": 50.08}
-    LAU_SNEB68G___8xSNEB68_WP = {"clsid": "{LAU_SNEB68_WP}", "name": "LAU_SNEB68G - 8xSNEB68_WP", "weight": 50.08}
     Lantirn_F_16 = {"clsid": "{CAAC1CFD-6745-416B-AFA4-CB57414856D0}", "name": "Lantirn F-16", "weight": 445}
     Lantirn_Target_Pod = {"clsid": "{D1744B93-2A8A-4C4D-B004-7A09CD8C8F3F}", "name": "Lantirn Target Pod", "weight": 200}
     LR_25___25_x_ARF_8_M3_API = {"clsid": "{LR25_ARF8M3_API}", "name": "LR-25 - 25 x ARF-8/M3 API", "weight": 141}
     LR_25___25_x_ARF_8_M3_HEI = {"clsid": "{LR25_ARF8M3_HEI}", "name": "LR-25 - 25 x ARF-8/M3 HEI", "weight": 161}
     LR_25___25_x_ARF_8_M3_TP_SM = {"clsid": "{LR25_ARF8M3_TPSM}", "name": "LR-25 - 25 x ARF-8/M3 TP-SM", "weight": 141}
+    LTF_5b_Aerial_Torpedo = {"clsid": "{LTF_5B}", "name": "LTF 5b Aerial Torpedo", "weight": 765}
     L_081_Fantasmagoria_ELINT_pod = {"clsid": "{0519A264-0AB6-11d6-9193-00A0249B6F00}", "name": "L-081 Fantasmagoria ELINT pod", "weight": 300}
     M10_Smoke_Tank___blue = {"clsid": "{US_M10_SMOKE_TANK_BLUE}", "name": "M10 Smoke Tank - blue", "weight": 266.7}
     M10_Smoke_Tank___green = {"clsid": "{US_M10_SMOKE_TANK_GREEN}", "name": "M10 Smoke Tank - green", "weight": 266.7}
@@ -903,9 +904,11 @@ class Weapons:
     TER_9A_with_3_x_Mk_82___500lb_GP_Bomb_LD = {"clsid": "{TER_9A_3*MK-82}", "name": "TER-9A with 3 x Mk-82 - 500lb GP Bomb LD", "weight": 737}
     TEST_ROTARY_LAUNCHER_MK82 = {"clsid": "TEST_ROTARY_LAUNCHER_MK82", "name": "TEST ROTARY LAUNCHER MK82", "weight": 6748}
     Telson_8___8_x_68_mm_SNEB_Type_250_F1B_TP_SM = {"clsid": "{TELSON8_SNEBT250}", "name": "Telson 8 - 8 x 68 mm SNEB Type 250 F1B TP-SM", "weight": 61.152}
+    Telson_8___8_x_68_mm_SNEB_Type_250_F1B_TP_SM_ = {"clsid": "{LAU_SNEB68_WP}", "name": "Telson 8 - 8 x 68 mm SNEB Type 250 F1B TP-SM", "weight": 61.152}
     Telson_8___8_x_68_mm_SNEB_Type_251_H1_HE = {"clsid": "{TELSON8_SNEBT251}", "name": "Telson 8 - 8 x 68 mm SNEB Type 251 H1 HE", "weight": 64.48}
     Telson_8___8_x_68_mm_SNEB_Type_252_H1_TP = {"clsid": "{TELSON8_SNEBT252}", "name": "Telson 8 - 8 x 68 mm SNEB Type 252 H1 TP", "weight": 65.04}
     Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT = {"clsid": "{TELSON8_SNEBT253}", "name": "Telson 8 - 8 x 68 mm SNEB Type 253 H1 HEAT", "weight": 70.4}
+    Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT_ = {"clsid": "{LAU_SNEB68G}", "name": "Telson 8 - 8 x 68 mm SNEB Type 253 H1 HEAT", "weight": 70.4}
     Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Green = {"clsid": "{TELSON8_SNEBT254_GREEN}", "name": "Telson 8 - 8 x 68 mm SNEB Type 254 H1 SM Green", "weight": 61.152}
     Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Red = {"clsid": "{TELSON8_SNEBT254_RED}", "name": "Telson 8 - 8 x 68 mm SNEB Type 254 H1 SM Red", "weight": 61.152}
     Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Yellow = {"clsid": "{TELSON8_SNEBT254_YELLOW}", "name": "Telson 8 - 8 x 68 mm SNEB Type 254 H1 SM Yellow", "weight": 61.152}
@@ -1460,6 +1463,7 @@ weapon_ids = {
     "DIS_WMD7": Weapons.DIS_WMD7,
     "DIS_YJ12": Weapons.DIS_YJ12,
     "DIS_YJ83K": Weapons.DIS_YJ83K,
+    "DIS_YU_6": Weapons.DIS_YU_6,
     "{SA342_Dipole}": Weapons.Dipole_Antanna__aesthetic_,
     "{DWS39_MJ1}": Weapons.DWS39_MJ1,
     "{DWS39_MJ1_MJ2}": Weapons.DWS39_MJ1_MJ2,
@@ -1523,6 +1527,7 @@ weapon_ids = {
     "{7B4B122D-C12C-4DB4-834E-4D8BB4D863A8}": Weapons.F_4_Fuel_tank_W,
     "{PTB-150GAL}": Weapons.F_5_150Gal_Fuel_tank,
     "{0395076D-2F77-4420-9D33-087A4398130B}": Weapons.F_5_275Gal_Fuel_tank,
+    "{G7A_T1}": Weapons.G7A_T1,
     "{GAU_12_Equalizer_AP}": Weapons.GAU_12_Gunpod_w_AP_M79,
     "{GAU_12_Equalizer_HE}": Weapons.GAU_12_Gunpod_w_HE_M792,
     "{GAU_12_Equalizer}": Weapons.GAU_12_Gunpod_w_SAPHEI_T,
@@ -1739,13 +1744,12 @@ weapon_ids = {
     "{DAC53A2F-79CA-42FF-A77A-F5649B601308}": Weapons.LAU_88_with_3_x_AGM_65D___Maverick_D__IIR_ASM_,
     "{71AAB9B8-81C1-4925-BE50-1EF8E9899271}": Weapons.LAU_88_with_3_x_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_,
     "{907D835F-E650-4154-BAFD-C656882555C0}": Weapons.LAU_88_with_3_x_AGM_65K___Maverick_K__CCD_Imp_ASM_,
-    "{LAU_SNEB68G}": Weapons.LAU_SNEB68G___8xSNEB68_EAP,
-    "{LAU_SNEB68_WP}": Weapons.LAU_SNEB68G___8xSNEB68_WP,
     "{CAAC1CFD-6745-416B-AFA4-CB57414856D0}": Weapons.Lantirn_F_16,
     "{D1744B93-2A8A-4C4D-B004-7A09CD8C8F3F}": Weapons.Lantirn_Target_Pod,
     "{LR25_ARF8M3_API}": Weapons.LR_25___25_x_ARF_8_M3_API,
     "{LR25_ARF8M3_HEI}": Weapons.LR_25___25_x_ARF_8_M3_HEI,
     "{LR25_ARF8M3_TPSM}": Weapons.LR_25___25_x_ARF_8_M3_TP_SM,
+    "{LTF_5B}": Weapons.LTF_5b_Aerial_Torpedo,
     "{0519A264-0AB6-11d6-9193-00A0249B6F00}": Weapons.L_081_Fantasmagoria_ELINT_pod,
     "{US_M10_SMOKE_TANK_BLUE}": Weapons.M10_Smoke_Tank___blue,
     "{US_M10_SMOKE_TANK_GREEN}": Weapons.M10_Smoke_Tank___green,
@@ -2068,9 +2072,11 @@ weapon_ids = {
     "{TER_9A_3*MK-82}": Weapons.TER_9A_with_3_x_Mk_82___500lb_GP_Bomb_LD,
     "TEST_ROTARY_LAUNCHER_MK82": Weapons.TEST_ROTARY_LAUNCHER_MK82,
     "{TELSON8_SNEBT250}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_250_F1B_TP_SM,
+    "{LAU_SNEB68_WP}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_250_F1B_TP_SM_,
     "{TELSON8_SNEBT251}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_251_H1_HE,
     "{TELSON8_SNEBT252}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_252_H1_TP,
     "{TELSON8_SNEBT253}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT,
+    "{LAU_SNEB68G}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT_,
     "{TELSON8_SNEBT254_GREEN}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Green,
     "{TELSON8_SNEBT254_RED}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Red,
     "{TELSON8_SNEBT254_YELLOW}": Weapons.Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Yellow,

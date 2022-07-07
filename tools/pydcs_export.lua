@@ -7,7 +7,10 @@
 -------------------------------------------------------------------------------
 
 -- edit export_path to your export folder
-local export_path = "D:\\Work\\DCS\\dcs\\dcs\\"
+local base_path = "D:\\Work\\DCS\\dcs\\dcs\\"
+local export_path = base_path .. "dcs\\"
+
+local log_file = io.open(base_path.."export.log", "w")
 
 local loadLiveries = require('loadLiveries')
 
@@ -17,6 +20,25 @@ local loadLiveries = require('loadLiveries')
 local function writeln(file, text)
     file:write(text.."\r\n")
 end
+
+local function debugln(fmt, ...)
+    local msg = string.format(fmt, unpack(arg))
+    writeln(log_file, msg)
+end
+
+-- https://stackoverflow.com/a/27028488/632035
+local function dump(o)
+    if type(o) == 'table' then
+       local s = '{ '
+       for k,v in pairs(o) do
+          if type(k) ~= 'number' then k = '"'..k..'"' end
+          s = s .. '['..k..'] = ' .. dump(v) .. ','
+       end
+       return s .. '} '
+    else
+       return tostring(o)
+    end
+ end
 
 local function safe_name(name)
     local safeName = name
@@ -143,6 +165,7 @@ local function handle_weapon(weapon, weaponKeys, weaponTable)
         -- There appears to be some garbage data in the weapon table where there are weapons without display names. Based on
         -- the CLSIDs, these are some duplicate copies of Hydras. Since they don't appear to be needed, and we have no names to
         -- display for them, just skip them.
+        debugln("Could not process weapon %s because it does not have a displayName: %s", weapon.CLSID, dump(weapon))
         return
     end
 
@@ -211,10 +234,16 @@ end
 -------------------------------------------------------------------------------
 -- prepare and export weapons data
 -------------------------------------------------------------------------------
+
 local weapons = {}
 local keys = {}
-for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS,CAT_PODS}) do
-    for i, v in ipairs(db.Weapons.Categories[j].Launchers) do
+-- The categories are not enumerated anywhere visible, but uses can be found in various lua files in the CoreMods directory.
+-- At time of writing this list only omits the CAT_SHELLS and CAT_CLUSTER_DESC categories. CAT_SHELLS we probably don't need,
+-- but CAT_CLUSTER_DESC doesn't have a Launchers entry. It's not clear if we need that category or not.
+-- See https://github.com/pydcs/dcs/issues/227 for debugging help.
+-- TODO: Figure out why we can't include CAT_CLUSTER_DESC.
+for _, category in ipairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS,CAT_PODS,CAT_TORPEDOES}) do
+    for i, v in ipairs(db.Weapons.Categories[category].Launchers) do
         handle_weapon(v, keys, weapons)
 	end
 end
@@ -521,6 +550,11 @@ from dcs.unittype import FlyingType
                         writeln(file, '        '..name..' = ('..j..', Weapons.'..name..')')
                     else
                         if plane.Pylons[j].Launchers[k].CLSID then
+                            debugln(
+                                "%s has %s assigned to a pylon but no matching weapon is known",
+                                plane.type,
+                                plane.Pylons[j].Launchers[k].CLSID
+                            )
                             writeln(file, '#ERRR '..plane.Pylons[j].Launchers[k].CLSID)
                         end
                     end
