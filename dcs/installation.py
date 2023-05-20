@@ -49,6 +49,7 @@ def get_dcs_saved_games_directory():
     Get the save game directory for DCS World
     :return: Save game directory as string
     """
+    return "" # disable this for now, since it can cause issues with loadouts in RotorOps and offers no benefit
     saved_games = os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
     dcs_variant = os.path.join(get_dcs_install_directory(), "dcs_variant.txt")
     if os.path.exists(dcs_variant):
@@ -64,6 +65,7 @@ def _steam_library_directories() -> List[Path]:
     Get the installation directory for Steam games
     :return List of Steam library folders where games can be installed
     """
+    return [] # disable this for now, since it can cause issues with loadouts in RotorOps and offers no benefit
     steam_dir = read_current_user_value(STEAM_REGISTRY_KEY_NAME, "SteamPath", Path)
     if steam_dir is None:
         return []
@@ -91,6 +93,7 @@ def _dcs_steam_path() -> Optional[Path]:
     Find the DCS install directory for DCS World Steam Edition
     :return: Install directory as string, empty string if not found
     """
+    return None # disable this for now, since it can cause issues with loadouts in RotorOps and offers no benefit
     for library_folder in _steam_library_directories():
         folder = library_folder / "steamapps/common/DCSWorld"
         if folder.is_dir():
