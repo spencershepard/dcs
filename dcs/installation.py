@@ -24,6 +24,8 @@ def get_dcs_install_directory() -> str:
     Get the DCS World install directory for this computer
     :return DCS World install directory
     """
+    return "" # disable this for now, since it can cause issues with loadouts in RotorOps and offers no benefit
+
     standalone_stable_path = read_current_user_value(
         DCS_STABLE_REGISTRY_KEY_NAME, "Path", Path
     )
