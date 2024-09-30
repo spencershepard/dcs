@@ -519,6 +519,7 @@ class Russia(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(Russia, self).__init__(
@@ -935,6 +936,7 @@ class Ukraine(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(Ukraine, self).__init__(
@@ -1440,6 +1442,7 @@ class USA(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(USA, self).__init__(
@@ -1827,6 +1830,7 @@ class Turkey(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Turkey, self).__init__(
@@ -2228,6 +2232,7 @@ class UK(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(UK, self).__init__(
@@ -2618,6 +2623,7 @@ class France(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(France, self).__init__(
@@ -3088,6 +3094,7 @@ class Germany(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Germany, self).__init__(
@@ -3911,6 +3918,7 @@ class USAFAggressors(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(USAFAggressors, self).__init__(
@@ -4286,6 +4294,7 @@ class Canada(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Canada, self).__init__(
@@ -4668,6 +4677,7 @@ class Spain(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Spain, self).__init__(
@@ -5077,6 +5087,7 @@ class TheNetherlands(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(TheNetherlands, self).__init__(
@@ -5455,6 +5466,7 @@ class Belgium(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Belgium, self).__init__(
@@ -5816,6 +5828,7 @@ class Norway(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Norway, self).__init__(
@@ -6175,6 +6188,7 @@ class Denmark(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Denmark, self).__init__(
@@ -6565,6 +6579,7 @@ class Israel(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Israel, self).__init__(
@@ -6989,6 +7004,7 @@ class Georgia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Georgia, self).__init__(
@@ -7276,6 +7292,7 @@ class Insurgents(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(Insurgents, self).__init__(
@@ -7587,6 +7604,7 @@ class Abkhazia(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(Abkhazia, self).__init__(
@@ -7875,6 +7893,7 @@ class SouthOssetia(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(SouthOssetia, self).__init__(
@@ -8250,6 +8269,7 @@ class Italy(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Italy, self).__init__(
@@ -8632,6 +8652,7 @@ class Australia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Australia, self).__init__(
@@ -8965,6 +8986,7 @@ class Switzerland(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Switzerland, self).__init__(
@@ -9293,6 +9315,7 @@ class Austria(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Austria, self).__init__(
@@ -9652,6 +9675,7 @@ class Belarus(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(Belarus, self).__init__(
@@ -10083,6 +10107,7 @@ class Bulgaria(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Bulgaria, self).__init__(
@@ -10471,6 +10496,7 @@ class CzechRepublic(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(CzechRepublic, self).__init__(
@@ -10782,6 +10808,7 @@ class China(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(China, self).__init__(
@@ -11118,6 +11145,7 @@ class Croatia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Croatia, self).__init__(
@@ -11548,6 +11576,7 @@ class Egypt(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Egypt, self).__init__(
@@ -11949,6 +11978,7 @@ class Finland(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Finland, self).__init__(
@@ -12349,6 +12379,7 @@ class Greece(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Greece, self).__init__(
@@ -12764,6 +12795,7 @@ class Hungary(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Hungary, self).__init__(
@@ -13150,6 +13182,7 @@ class India(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(India, self).__init__(
@@ -13571,6 +13604,7 @@ class Iran(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Iran, self).__init__(
@@ -13969,6 +14003,7 @@ class Iraq(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Iraq, self).__init__(
@@ -14360,6 +14395,7 @@ class Japan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Japan, self).__init__(
@@ -14813,6 +14849,7 @@ class Kazakhstan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Kazakhstan, self).__init__(
@@ -15167,6 +15204,7 @@ class NorthKorea(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(NorthKorea, self).__init__(
@@ -15534,6 +15572,7 @@ class Pakistan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Pakistan, self).__init__(
@@ -15952,6 +15991,7 @@ class Poland(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Poland, self).__init__(
@@ -16363,6 +16403,7 @@ class Romania(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Romania, self).__init__(
@@ -16742,6 +16783,7 @@ class SaudiArabia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(SaudiArabia, self).__init__(
@@ -17123,6 +17165,7 @@ class Serbia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Serbia, self).__init__(
@@ -17492,6 +17535,7 @@ class Slovakia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Slovakia, self).__init__(
@@ -17857,6 +17901,7 @@ class SouthKorea(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(SouthKorea, self).__init__(
@@ -18193,6 +18238,7 @@ class Sweden(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Sweden, self).__init__(
@@ -18597,6 +18643,7 @@ class Syria(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Syria, self).__init__(
@@ -18965,6 +19012,7 @@ class Yemen(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Yemen, self).__init__(
@@ -19345,6 +19393,7 @@ class Vietnam(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Vietnam, self).__init__(
@@ -19705,6 +19754,7 @@ class Venezuela(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Venezuela, self).__init__(
@@ -20029,6 +20079,7 @@ class Tunisia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Tunisia, self).__init__(
@@ -20378,6 +20429,7 @@ class Thailand(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Thailand, self).__init__(
@@ -20728,6 +20780,7 @@ class Sudan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Sudan, self).__init__(
@@ -21049,6 +21102,7 @@ class Philippines(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Philippines, self).__init__(
@@ -21412,6 +21466,7 @@ class Morocco(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Morocco, self).__init__(
@@ -21748,6 +21803,7 @@ class Mexico(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Mexico, self).__init__(
@@ -22086,6 +22142,7 @@ class Malaysia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Malaysia, self).__init__(
@@ -22452,6 +22509,7 @@ class Libya(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Libya, self).__init__(
@@ -22814,6 +22872,7 @@ class Jordan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Jordan, self).__init__(
@@ -23197,6 +23256,7 @@ class Indonesia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Indonesia, self).__init__(
@@ -23521,6 +23581,7 @@ class Honduras(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Honduras, self).__init__(
@@ -23875,6 +23936,7 @@ class Ethiopia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Ethiopia, self).__init__(
@@ -24236,6 +24298,7 @@ class Chile(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Chile, self).__init__(
@@ -24589,6 +24652,7 @@ class Brazil(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Brazil, self).__init__(
@@ -24934,6 +24998,7 @@ class Bahrain(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Bahrain, self).__init__(
@@ -25285,6 +25350,7 @@ class ThirdReich(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(ThirdReich, self).__init__(
@@ -25567,6 +25633,7 @@ class Yugoslavia(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(Yugoslavia, self).__init__(
@@ -25993,6 +26060,7 @@ class USSR(Country):
             CallsignGrassAirfield.B01
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(USSR, self).__init__(
@@ -26342,6 +26410,7 @@ class ItalianSocialRepublic(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(ItalianSocialRepublic, self).__init__(
@@ -26808,6 +26877,7 @@ class Algeria(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Algeria, self).__init__(
@@ -27162,6 +27232,7 @@ class Kuwait(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Kuwait, self).__init__(
@@ -27504,6 +27575,7 @@ class Qatar(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Qatar, self).__init__(
@@ -27867,6 +27939,7 @@ class Oman(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Oman, self).__init__(
@@ -28240,6 +28313,7 @@ class UnitedArabEmirates(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(UnitedArabEmirates, self).__init__(
@@ -28573,6 +28647,7 @@ class SouthAfrica(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(SouthAfrica, self).__init__(
@@ -28977,6 +29052,7 @@ class Cuba(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Cuba, self).__init__(
@@ -29320,6 +29396,7 @@ class Portugal(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Portugal, self).__init__(
@@ -29700,6 +29777,7 @@ class GDR(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = False
 
     def __init__(self):
         super(GDR, self).__init__(
@@ -30056,6 +30134,7 @@ class Lebanon(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Lebanon, self).__init__(
@@ -30879,6 +30958,7 @@ class CombinedJointTaskForcesBlue(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(CombinedJointTaskForcesBlue, self).__init__(
@@ -31702,6 +31782,7 @@ class CombinedJointTaskForcesRed(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(CombinedJointTaskForcesRed, self).__init__(
@@ -32525,6 +32606,7 @@ class UnitedNationsPeacekeepers(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(UnitedNationsPeacekeepers, self).__init__(
@@ -32865,6 +32947,7 @@ class Argentina(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Argentina, self).__init__(
@@ -33214,6 +33297,7 @@ class Cyprus(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Cyprus, self).__init__(
@@ -33560,6 +33644,7 @@ class Slovenia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Slovenia, self).__init__(
@@ -33902,6 +33987,7 @@ class Bolivia(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Bolivia, self).__init__(
@@ -34232,6 +34318,7 @@ class Ghana(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Ghana, self).__init__(
@@ -34576,6 +34663,7 @@ class Nigeria(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Nigeria, self).__init__(
@@ -34934,6 +35022,7 @@ class Peru(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Peru, self).__init__(
@@ -35273,6 +35362,7 @@ class Ecuador(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Ecuador, self).__init__(
@@ -35645,6 +35735,7 @@ class Afghanistan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Afghanistan, self).__init__(
