@@ -611,6 +611,8 @@ class Warehouses:
 
     def load_dict(self, data):
         for x in data.get("airports", {}):
+            if not self.terrain.airport_by_id(x):
+                continue
             self.terrain.airport_by_id(x).load_from_dict(data["airports"][x])
 
     def __str__(self):
