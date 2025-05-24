@@ -19,6 +19,7 @@ to test the projection for errors.
 The resulting data is exported to dcs/theater/projections/<map>.py as a
 TransverseMercator object.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -47,6 +48,7 @@ from dcs.terrain.syria import Syria
 from dcs.terrain.terrain import Terrain
 from dcs.terrain.thechannel import TheChannel
 from dcs.terrain.marianaislands import MarianaIslands
+from dcs.terrain.germanycoldwar import GermanyColdWar
 from dcs.terrain.projections import TransverseMercator
 from dcs.triggers import TriggerStart
 from pyproj import CRS, Transformer
@@ -69,6 +71,26 @@ ARG_TO_TERRAIN_MAP = {
     "sinai": Sinai(),
     "syria": Syria(),
     "marianaislands": MarianaIslands(),
+    "germanycoldwar": GermanyColdWar(),
+}
+
+# https://gisgeography.com/central-meridian/
+# UTM zones determined by guess and check. There are only a handful in the region for
+# each map and getting the wrong one will be flagged with errors when processing.
+CENTRAL_MERIDIANS = {
+    "caucasus": 33,
+    "falklands": -57,
+    "nevada": -117,
+    "normandy": -3,
+    "persiangulf": 57,
+    "thechannel": 3,
+    "syria": 39,
+    "marianaislands": 147,
+    "sinai": 33,
+    "kola": 23,
+    "afghanistan": 63,
+    "iraq": 45,
+    "germanycoldwar": 21,
 }
 
 
@@ -267,7 +289,7 @@ def main() -> None:
     args = parse_args()
     logging.info(
         "Using %s as DCS saved game directory. If this is not correct, edit %s",
-        Path(__file__).resolve()
+        Path(__file__).resolve(),
     )
     terrain = ARG_TO_TERRAIN_MAP[args.map]
     mission = create_mission(terrain)

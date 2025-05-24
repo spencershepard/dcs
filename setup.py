@@ -45,6 +45,7 @@ setup(
         'dcs/terrain',
         'dcs/terrain/caucasus',
         'dcs/terrain/falklands',
+        'dcs/terrain/germanycoldwar',
         'dcs/terrain/marianaislands',
         'dcs/terrain/nevada',
         'dcs/terrain/normandy',
